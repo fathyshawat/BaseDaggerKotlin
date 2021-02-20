@@ -30,6 +30,7 @@ abstract class BaseActivity<D : ViewDataBinding, V : ViewModel> : DaggerAppCompa
         super.onCreate(savedInstanceState)
         dataBinding = DataBindingUtil.setContentView(this, layoutRes())
         viewModel = ViewModelProviders.of(this, viewModelFactory).get(getViewModel())
+
     }
 
 
